@@ -1,5 +1,7 @@
 // css reset -- styles that are not directly related to this project
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: border-box;
 }
 html {
@@ -8,11 +10,12 @@ html {
 }
 body {
   margin: 0;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 1.25em;
   background-color: #f7fff9;
 }
-h1, h3 {
+h1,
+h3 {
   margin: 0;
 }
 h1 {
@@ -38,7 +41,7 @@ img {
 }
 hr {
   border: 0;
-  border-top: 2px dashed #009A68;
+  border-top: 2px dashed #009a68;
 }
 section {
   padding: 90px 15px;
@@ -48,10 +51,10 @@ section {
 }
 .banner {
   background-color: #99030d;
-  color: #FFFFFF;
+  color: #ffffff;
   padding: 45px 15px;
   a {
-    color: #FF9800;
+    color: #ff9800;
     text-decoration: none;
     font-weight: 700;
     text-transform: uppercase;
@@ -65,11 +68,11 @@ footer {
   background-color: #193549;
   padding: 45px 15px;
   p {
-    color: #FFFFFF;
+    color: #ffffff;
     margin: 0;
     text-align: center;
     a {
-      color: #FFC600;
+      color: #ffc600;
       text-decoration: none;
     }
   }
@@ -114,12 +117,10 @@ footer {
     grid-template-columns: 47% 47%;
     column-gap: 6%;
   }
-  .col {
-    &:first-child {
-      margin-bottom: 60px;
-      @media (min-width: 768px) {
-        margin-bottom: 0;
-      }
+  .col:first-child {
+    margin-bottom: 60px;
+    @media (min-width: 768px) {
+      margin-bottom: 0;
     }
   }
 }
